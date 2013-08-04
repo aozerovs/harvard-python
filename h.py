@@ -15,11 +15,11 @@ def formatAuthorList(authorList):
         authorOut = ""
         for author in authorList:
             authorOut += author + " "
-    return authorOut
+    return authorOut[:-1]
 
 # book
 def book(n,y,t,e,pl,p,pn):
-    return pageNumbers(n+"., "+y+". *"+t+".* "+e+" ed. "+pl+": "+p+".", pn)
+    return pageNumbers(n+", "+y+". *"+t+".* "+e+" ed. "+pl+": "+p+".", pn)
 
 # web
 def web(n,y,t,p):
