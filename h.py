@@ -60,7 +60,8 @@ while(True):
     if(ref!="web"):
         pl=raw_input("Publication location:").title()
     p=raw_input("Publisher:").title()
-    pn=raw_input("Page numbers:")
+    if(ref!="web"):
+        pn=raw_input("Page numbers:")
 
     # # Format author
     # a=a.split()
@@ -71,12 +72,14 @@ while(True):
 
     # Authors split and format
     for author in authorsBeforeFormat:
+        # Split author to surename and firstname
         author=author.split()
         if(len(author)>2):
             authorList.append(author[len(author)-1].title()+", "+author[0][0].upper()+"."+author[1][0].upper()+".")
         else:
             authorList.append(author[1].title()+", "+author[0][0].upper()+".")
 
+    # Format author list
     n = formatAuthorList(authorList)
 
     # Get type
