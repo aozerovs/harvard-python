@@ -9,15 +9,15 @@ cd harvard-python
 python h.py
 ```
 
-One the script is run you'll be asked:
+One the script is running you'll be asked:
 ```
 Name of file:
 ```
 This is the name of the out Markdown file.
 
-Next question will be what you're referencing. Currently harvard-python supports referencing for books, websites and articles. More to come.
+Next question will be what you're referencing. Currently harvard-python supports referencing for books, websites, and articles. More to come.
 
-Next will be questions about what you're referencing. The questions will be:
+Next will be questions about what you're referencing. The questions will be (questions vary based on type):
 
 ```
 Author:
@@ -30,7 +30,7 @@ Publisher:
 Page numbers (Can be blank):
 ```
 
-Once you've filled in the last one you will see a print out of the reference in the terminal and it will be printed to the Markdown file.
+Once you've filled in the last one you will see a print out of the reference in the terminal and it will be written to the Markdown file.
 
 ## Example
 
@@ -49,7 +49,7 @@ Publisher: Penguin
 Page numbers (can be blank):
 ```
 
-And the put put for this would be:
+And the output put for this would be:
 
 ```
 Wilson, D. Day, G.E., 2012. *How To Be Awesome With Python.* 1st ed. Manchester: Penguin.
