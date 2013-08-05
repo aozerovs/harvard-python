@@ -46,10 +46,19 @@ while(True):
     authorList=[]
     moreAuthors = True
     while(moreAuthors):
-        authorsBeforeFormat.append(raw_input("Author:"))
+        authorIn=raw_input("Author:")
+        # If author is one word
+        if(len(authorIn.split())<2):
+            print "Error: Author name invalid"
+        else:
+            authorsBeforeFormat.append(authorIn)
         more=raw_input("More authors?")
         if(more.lower()=="no"):
-            moreAuthors = False
+            # if no authors in list
+            if(len(authorsBeforeFormat)==0):
+                print "Error: No authors"
+            else:
+                moreAuthors = False
     y=raw_input("Year:")
     t=raw_input("Title:").title()
     if(ref=="journal"):
@@ -62,13 +71,6 @@ while(True):
     p=raw_input("Publisher:").title()
     if(ref!="web"):
         pn=raw_input("Page numbers:")
-
-    # # Format author
-    # a=a.split()
-    # if(len(a)>2): # Middle name
-    #     n=a[len(a)-1].title()+", "+a[0][0]+"."+a[1][0]
-    # else:
-    #     n=a[1].title()+", "+a[0][0].upper()
 
     # Authors split and format
     for author in authorsBeforeFormat:
