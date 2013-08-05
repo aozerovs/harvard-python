@@ -17,11 +17,11 @@ def formatAuthorList(authorList):
             authorOut += author + " "
     return authorOut[:-1]
 
-# book
+# Book
 def book(n,y,t,e,pl,p,pn):
     return pageNumbers(n+", "+y+". *"+t+".* "+e+" ed. "+pl+": "+p+".", pn)
 
-# web
+# Web
 def web(n,y,t,p):
     return n+"., "+y+", *"+t+"*.[online] Available at: <"+p+"> [Accessed "+time.strftime('%d %B %Y')+"]"
 # Journal
@@ -70,7 +70,7 @@ while(True):
         pl=raw_input("Publication location:").title()
     p=raw_input("Publisher:").title()
     if(ref!="web"):
-        pn=raw_input("Page numbers:")
+        pn=raw_input("Page numbers: (can be blank)")
 
     # Authors split and format
     for author in authorsBeforeFormat:

@@ -2,7 +2,7 @@
 
 A script for generating Harvard referencing.
 
-## Get the script
+## Get the script and run it
 ```
 git clone https://github.com/wilsonand1/harvard-python.git
 cd harvard-python
@@ -27,8 +27,31 @@ Title:
 Edition:
 Publication location:
 Publisher:
+Page numbers (Can be blank):
 ```
 
 Once you've filled in the last one you will see a print out of the reference in the terminal and it will be printed to the Markdown file.
+
+## Example
+
+```
+Name of file: python
+Type: book
+Author: Danny Wilson
+More authors: yes
+Author: Grace Elizabeth Day
+Year: 2012
+Title: How to be awesome with Python
+Edition: 1st
+Publication location: Manchester
+Publisher: Penguin
+Page numbers (can be blank):
+```
+
+And the put put for this would be:
+
+```
+Wilson, D. Day, G.E., 2012. *How To Be Awesome With Python.* 1st ed. Manchester: Penguin.
+```
 
 Also, the code is pretty filthy.
