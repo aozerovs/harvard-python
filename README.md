@@ -40,6 +40,7 @@ Type: book
 Author: Danny Wilson
 More authors: yes
 Author: Grace Elizabeth Day
+More authors: no
 Year: 2012
 Title: How to be awesome with Python
 Edition: 1st
