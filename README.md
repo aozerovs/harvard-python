@@ -2,8 +2,33 @@
 
 A script for generating Harvard referencing.
 
-Pretty self explanatory, but I'll update this read me when I get the time. Just fire the script up and follow it through.
+## Get the script
+''''
+git clone https://github.com/wilsonand1/harvard-python.git
+cd harvard-python
+python h.py
+''''
 
-It can only reference books, websites and journal articles at the moment. I'll implement more soon. The first question names the output file.
+One the script is run you'll be asked:
+''''
+Name of file:
+''''
+This is the name of the out Markdown file.
+
+Next question will be what you're referencing. Currently harvard-python supports referencing for books, websites and articles. More to come.
+
+Next will be questions about what you're referencing. The questions will be:
+
+''''
+Author:
+More authors:
+Year:
+Title:
+Edition:
+Publication location:
+Publisher:
+''''
+
+Once you've filled in the last one you will see a print out of the reference in the terminal and it will be printed to the Markdown file.
 
 Also, the code is pretty filthy.
